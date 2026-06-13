@@ -127,3 +127,7 @@
 
 //Зробіть сервіс який отримує тризначне число
 //Поверніть користувачу сумму цих чисел
+
+// let number = 456;
+// let text = String(number);
+// console.log(parseInt(text[0]) + parseInt(text[1]) + parseInt(text[2]));

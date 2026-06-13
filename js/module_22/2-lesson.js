@@ -18,7 +18,7 @@
 // Якщо змінна ="test" - виведіть true,
 //Перевірте це на варіантах  'test', "qwerty", true
 
-// let b = "test";
+// let b ;
 
 // b = "test";
 // console.log(b === "test");
@@ -127,7 +127,13 @@
 
 //Зробіть сервіс який отримує тризначне число
 //Поверніть користувачу сумму цих чисел
-
+// Зробив спочатку так, але встиг прочитати рекомендацію
 // let number = 456;
 // let text = String(number);
 // console.log(parseInt(text[0]) + parseInt(text[1]) + parseInt(text[2]));
+
+let number = prompt("Введіть тризначне число");
+
+let sum = parseInt(number[0]) + parseInt(number[1]) + parseInt(number[2]);
+
+alert(`Сума цифр числа ${number} дорівнює: ${sum}`);

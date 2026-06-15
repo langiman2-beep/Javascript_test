@@ -27,7 +27,7 @@
 //   }
 // }
 
-// 3-варіант
+// 3-варіант (без continue)
 // for (let i = 2; i <= 10; i++) {
 //   if (i % 2 === 0) {
 //     console.log(i);
@@ -66,14 +66,14 @@
 //  -- 5 --
 // Вирахуйте середній вік
 
-// const girls = [
-//   { age: 23, name: "Оля" },
-//   { age: 29, name: "Аня" },
-//   { age: 10, name: "Юля" },
-//   { age: 20, name: "Катя" },
-// ];
-// const totalAge = girls.reduce((sum, girl) => sum + girl.age, 0);
+const girls = [
+  { age: 23, name: "Оля" },
+  { age: 29, name: "Аня" },
+  { age: 10, name: "Юля" },
+  { age: 20, name: "Катя" },
+];
+const totalAge = girls.reduce((sum, girl) => sum + girl.age, 0);
 
-// const averageAge = totalAge / girls.length;
+const averageAge = totalAge / girls.length;
 
-// console.log(averageAge);
+console.log(averageAge);

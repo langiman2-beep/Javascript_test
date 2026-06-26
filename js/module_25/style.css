@@ -1,0 +1,27 @@
+/* Задаем нужный размер для персонажа на сайте */
+.bike-container {
+  width: 100px; /* Меняйте это число, чтобы уменьшить или увеличить лангуста */
+  height: auto;
+}
+
+/* Сама анимация кручения */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Заставляем крутиться заднее колесо вокруг его оси */
+#rear-wheel {
+  animation: spin 1s linear infinite;
+  transform-origin: 140px 240px;
+}
+
+/* Заставляем крутиться переднее колесо вокруг его оси */
+#front-wheel {
+  animation: spin 1s linear infinite;
+  transform-origin: 340px 240px;
+}

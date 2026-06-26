@@ -45,11 +45,11 @@
 
 // studentTemplate.showInfo.call(student1);
 
-// Варіант 2: APPLY
+// // Варіант 2: APPLY
 
 // studentTemplate.showInfo.apply(student2);
 
-// Варіант 3: BIND
+// // Варіант 3: BIND
 
 // const showOlegInfo = studentTemplate.showInfo.bind(student3);
 // showOlegInfo();
@@ -97,18 +97,18 @@
 // 2) cherry 58, 1,3
 // 3) orange 89. 3,4
 
-// function createShop() {
-//   return function (productName, pricePerKg, weight) {
-//     const totalPrice = pricePerKg * weight;
+function createShop() {
+  return function (productName, pricePerKg, weight) {
+    const totalPrice = pricePerKg * weight;
 
-//     const formattedPrice = totalPrice.toFixed(2);
+    const formattedPrice = totalPrice.toFixed(2);
 
-//     return `Товар: ${productName}, Стоимость: ${formattedPrice} грн`;
-//   };
-// }
+    return `Товар: ${productName}, Стоимость: ${formattedPrice} грн`;
+  };
+}
 
-// const calculateOrder = createShop();
+const calculateOrder = createShop();
 
-// console.log(calculateOrder("banana", 30, 4.5));
-// console.log(calculateOrder("cherry", 58, 1.3));
-// console.log(calculateOrder("orange", 89, 3.4));
+console.log(calculateOrder("banana", 30, 4.5));
+console.log(calculateOrder("cherry", 58, 1.3));
+console.log(calculateOrder("orange", 89, 3.4));

@@ -32,3 +32,27 @@ const user3 = new Abonent({
 console.log(user1.name);
 console.log(user2.name);
 console.log(user3.name);
+
+// наслідування
+
+class VipAbonent extends Abonent {
+  constructor(options) {
+    super(options);
+    this.discount = options.discount;
+  }
+
+  set name(newInfo) {
+    super.name = newInfo;
+  }
+
+  get name() {
+    return `${super.name}, Скидка: ${this.discount}% ⭐`;
+  }
+}
+
+const vipUser = new VipAbonent({
+  name: "Люська +380991112233",
+  discount: 15,
+});
+
+console.log(vipUser.name);
